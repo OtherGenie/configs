@@ -1,0 +1,4 @@
+Host github.com-othergenie
+	Hostname github.com
+	User git
+	IdentityFile ~/.ssh/other_genie
