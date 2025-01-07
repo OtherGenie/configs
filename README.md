@@ -7,6 +7,9 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/other_genie
 
 cp ./ssh_config ~/.ssh/config
+
+# in /etc/hosts
+140.82.114.3 github.com-othergenie
 ```
 
 # gvm
