@@ -38,7 +38,7 @@ vim.keymap.set("n", "<leader>q", function()
 end)
 
 --
--- WINDOWS
+-- WINDOWS/PANES
 --
 vim.keymap.set("n", "<leader>-", function()
 	vscode.action("workbench.action.splitEditorDown")
@@ -46,6 +46,19 @@ end)
 
 vim.keymap.set("n", "<leader>\\", function()
 	vscode.action("workbench.action.splitEditorRight")
+end)
+
+vim.keymap.set("n", "<leader>l", function()
+	vscode.action("workbench.action.navigateRight")
+end)
+vim.keymap.set("n", "<leader>h", function()
+	vscode.action("workbench.action.navigateLeft")
+end)
+vim.keymap.set("n", "<leader>k", function()
+	vscode.action("workbench.action.navigateUp")
+end)
+vim.keymap.set("n", "<leader>j", function()
+	vscode.action("workbench.action.navigateDown")
 end)
 
 --
