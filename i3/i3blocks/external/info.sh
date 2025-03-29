@@ -20,6 +20,8 @@
 
 MOUNTPOINT="$HOME/labs/hunting/og-ssd"
 
+mkdir -p "$MOUNTPOINT"
+
 if mountpoint -q "$MOUNTPOINT"; then
   df -h "$MOUNTPOINT" | awk '/\//{ printf("  %4s/%s \n", $4, $2) }'
 fi
