@@ -12,7 +12,7 @@
 
 # auto-mount
 # edit: sudo vi /etc/fstab
-# for example: UUID=<uuid> <path> ntfs defaults,nofail,x-systemd.automount 0 2
+# for example: UUID=<uuid> <path> ntfs defaults,nofail,x-systemd,automount,uid=1000,gid=1000 0 2
 # sudo systemctl daemon-reload
 
 # sudo mount -a
