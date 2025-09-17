@@ -263,7 +263,8 @@ exec feh --bg-fill --randomize ~/wallpapers/*
 exec picom -f
 # exec --no-startup-id compton
 # language toggle
-exec_always --no-startup-id setxkbmap -model pc105 -layout us,ge,de -option grp:win_space_toggle
+# virtual keyboard: gkbd-keyboard-display -l pl
+exec_always --no-startup-id setxkbmap -model pc105 -layout us,ge,de,pl -option grp:alt_shift_toggle
 # exec "setxkbmap -layout us,ge,de"
 # swap caps and esc
 exec_always setxkbmap -option caps:swapescape
