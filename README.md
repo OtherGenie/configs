@@ -1,5 +1,10 @@
 # SSH for Github
 
+```
+cp ./starship/starship.toml ~/.config/starship.toml
+cp -r ./i3 ./fish ./alacritty ./lazyvim ~/.config/.
+```
+
 ```bash
 # generate ssh key
 ssh-keygen -t ed25519 -C "genie.other@gmail.com"
@@ -19,11 +24,35 @@ sudo update-alternatives --config x-terminal-emulator
 # update default shell
 chsh -s <shell>
 
-# build essentials
-sudo apt install build-essentials
+# essential packages
+sudo apt-get install \
+ build-essential \
+ git \
+ i3 \
+ i3blocks \
+ htop \
+ tmux \
+ feh \
+ jq \
+ rsync \
+ nautilus \
+ fonts-font-awesome \
+ alacritty \
+ xclip \
+ fish \
+ fd-find \
+ fzf \
+ picom \
+ gnome-screenshot \
+ lm-sensors \
+ neofetch \
+ scrot \
+ curl
 
-# i3, status_command
-sudo apt-get install i3blocks
+# install starship
+
+# install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # install gvm
 sudo apt-get install curl git mercurial make binutils bison gcc build-essential bison
@@ -50,6 +79,12 @@ sudo unzip ./JetBrainsMono.zip -d /usr/share/fonts/JetBrainsMono
 fc-cache -f -v
 rm JetBrainsMono.zip
 
-# install xclip for clipboard provider in neovim
-sudo apt-get install xclip
+# nvidia
+# in /etc/apt/sources.list
+# deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+sudo apt update
+sudo apt install nvidia-driver
+
+# update default editor for git
+git config --global core.editor "nvim"
 ```

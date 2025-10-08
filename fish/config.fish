@@ -54,9 +54,9 @@ set -U fish_user_paths $HOME/.pub-cache/bin/ $fish_user_paths
 
 # aliases
 alias g="git"
-alias k="kubectl"
-alias mk="minikube"
-alias mkk="minikube kubectl --"
+#alias k="kubectl"
+#alias mk="minikube"
+#alias mkk="minikube kubectl --"
 alias d="docker"
 alias docker-compose="docker compose"
 alias dpsf='docker ps --format "table {{.Names}}\t{{.RunningFor}}\t{{.Ports}}"'
@@ -144,8 +144,8 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
-minikube completion fish | source
-kubectl completion fish | source
+#minikube completion fish | source
+#kubectl completion fish | source
 
 #rvm default
 #set -x GEM_HOME (rvm gemdir)
