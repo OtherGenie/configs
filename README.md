@@ -41,7 +41,7 @@ sudo apt-get install \
  xclip \
  fish \
  fd-find \
- fzf \
+ # fzf \
  picom \
  gnome-screenshot \
  lm-sensors \
@@ -87,4 +87,11 @@ sudo apt install nvidia-driver
 
 # update default editor for git
 git config --global core.editor "nvim"
+
+# install brew
+# in fish config: eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install latest fzf
+brew install fzf
 ```
