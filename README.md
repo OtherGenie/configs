@@ -94,4 +94,9 @@ git config --global core.editor "nvim"
 
 # install latest fzf
 brew install fzf
+
+# install uv
+brew install uv
+# uv autocompletion
+echo 'uv generate-shell-completion fish | source' > ~/.config/fish/completions/uv.fish
 ```
