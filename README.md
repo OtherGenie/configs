@@ -47,6 +47,7 @@ sudo apt-get install \
  lm-sensors \
  neofetch \
  scrot \
+ ripgrep \
  curl
 
 # install starship
