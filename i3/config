@@ -268,3 +268,7 @@ exec_always --no-startup-id setxkbmap -model pc105 -layout us,ge,de,pl -option g
 # exec "setxkbmap -layout us,ge,de"
 # swap caps and esc
 exec_always setxkbmap -option caps:swapescape
+
+for_window [class="Google-chrome"] floating disable
+for_window [class="Google-chrome"] border pixel 0
+for_window [class="Google-chrome"] fullscreen disable
