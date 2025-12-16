@@ -1,5 +1,5 @@
 window:
-  opacity: 0.8
+  opacity: 0.9
   padding:
     x: 10
     y: 10
@@ -13,7 +13,7 @@ font:
   italic:
     family: "JetBrainsMono Nerd Font"
     style: "Light Italic"
-  size: 14.0
+  size: 12.0
 colors:
   normal:
     black: "0xffffff"
@@ -36,3 +36,5 @@ colors:
     white: "0x1d1f21"
 mouse:
   hide_when_typing: true
+key_bindings:
+  - { key: Return, mods: Shift, chars: "\x1b[13;2u" }
